@@ -33,7 +33,7 @@ layouts_dir:      _common/_layouts
 #
 
 url:              http://howeverina.github.io
-baseurl:          
+baseurl:          /wiki
 
 collections:
   history:
