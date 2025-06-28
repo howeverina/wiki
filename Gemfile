@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 # don't add github-pages to the jekyll_plugins group!
 
-gem "rexml"
+# gem "rexml"
 gem "webrick"
 gem 'github-pages', '134'
 
