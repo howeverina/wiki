@@ -17,8 +17,8 @@ author:
   email:
 
 # Setup
-title:            FIRSTwiki
-tagline:          The FIRST Robotics encyclopedia
+title:            연이나위키
+tagline:          이것저것 정리하는 개인 위키
 paginate:         5
 safe:             false
 excerpt_separator: ""
