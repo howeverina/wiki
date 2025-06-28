@@ -25,7 +25,7 @@
     <div class="container content">
       <header>
         <div class="row">
-            <h1 class="col-md-9"><a href="{% if jekyll.environment == "production" %}/{% else %}{{ site.baseurl }}/{% endif %}" title="Home">FIRSTwiki</a>
+            <h1 class="col-md-9"><a href="https://howeverina.github.io/wiki/" title="Home">FIRSTwiki</a>
                 <small>{{ site.tagline }}</small>
             </h1>
 
@@ -45,14 +45,6 @@
         <nav class="navbar">
           <ul class="nav nav-tabs">
               <li><a href="/news/">News</a></li>
-              <li class="dropdown">
-                  <a data-target="#" href="/frcteams/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">FRC Teams<span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                      {% for num in site.data.teamdata.teamidx.frc %}
-                          <li><a href="/frc{{ num }}/">{{ num }}'s</a></li>
-                      {% endfor %}
-                  </ul>
-              </li>
               <li><a href="/wiki/">wiki</a></li>
               <li><a href="/docs/">Docs</a></li>
               
