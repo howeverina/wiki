@@ -11,8 +11,8 @@
 {%endcomment%}
 
 <div class="alert alert-info" role="alert">
-    Read more about 
+    위키백과에서
     <a class="alert-link" href="http://en.wikipedia.org/wiki/{{ include.topic | replace: ' ','_' }}">{{ include.topic }}</a>
-    on wikipedia.
+    문서를 읽어보세요!
 </div>
 

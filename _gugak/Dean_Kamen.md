@@ -1,5 +1,5 @@
 ---
-title: Dean Kamen
+title: 삼분손익법
 ---
 
 {% include stub %}
