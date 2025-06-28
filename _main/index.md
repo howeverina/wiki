@@ -14,7 +14,7 @@ permalink: /
 
 ### 역사
 
-* [조선전기](earlyjoseon)
+* [조선 전기](earlyjoseon)
 
 ### 기타 인문/사회
 

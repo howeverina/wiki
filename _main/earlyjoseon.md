@@ -1,5 +1,5 @@
 ---
-title: earlyjoseon
+title: 조선 전기
 ---
 {% include stub %}
 
