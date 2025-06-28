@@ -37,19 +37,19 @@ url:              http://howeverina.github.io
 baseurl:          /wiki
 
 collections:
-  history:
-    output: true
-    permalink: /:slug
   main: 
     output: true
     permalink: /:slug
-  nontech:
+  대중음악:
     output: true
     permalink: /:slug
-  people:
+  국악이론:
     output: true
     permalink: /:slug
-  tech:
+  조선전기:
+    output: true
+    permalink: /:slug
+  인문사회:
     output: true
     permalink: /:slug
 
@@ -61,30 +61,30 @@ defaults:
   - 
     scope:
       path: ""
-      type: "history"
-    values:
-      layout: page
-  - 
-    scope:
-      path: ""
       type: "main"
     values:
       layout: page
   - 
     scope:
       path: ""
-      type: "nontech"
+      type: "대중음악"
     values:
       layout: page
   - 
     scope:
       path: ""
-      type: "people"
+      type: "국악이론"
     values:
       layout: page
   - 
     scope:
       path: ""
-      type: "tech"
+      type: "조선전기"
+    values:
+      layout: page
+  - 
+    scope:
+      path: ""
+      type: "인문사회"
     values:
       layout: page

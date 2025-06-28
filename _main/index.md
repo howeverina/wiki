@@ -1,17 +1,25 @@
 ---
-title: /wiki/
+title: 프론트 페이지
 permalink: /
 ---
 
 {% include stub %}
 
-* [History](history)
-* [People](people)
+개인 위키입니다. 그러니까.. 연이나로서 활동했던 내용을 정리하는 페이지는 아니고, 공부하고 이해한 것을 정리합니다.
 
-* [Non technical subjects](nontech)
-* [Technical subjects](tech)
+### 음악
 
+* [대중음악 전반](대중음악)
+* [국악이론](국악이론)
 
-Additional links:
+### 역사
 
-* [All pages](/wiki/all-pages)
+* [조선전기](조선전기)
+
+### 기타 인문/사회
+
+* [인문사회 일반](인문사회)
+
+## 참고할만한 링크
+
+* [전체 페이지 목록](/wiki/all-pages)
