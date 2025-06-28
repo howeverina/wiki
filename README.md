@@ -1,17 +1,7 @@
-FIRSTwiki: wiki site
-====================
+# 연이나 위키
 
-[![Join the chat at https://gitter.im/firstwiki/wiki](https://badges.gitter.im/firstwiki/wiki.svg)](https://gitter.im/firstwiki/wiki)
+연이나 위키는 FIRSTwiki의 포크입니다. 원본 리포지토리(firstwiki/wiki)를 포크해 주세요. 다만 과정이 조금 헷갈릴 수도 있으니 [이 블로그 포스트](https://howeverina.github.io/posts/%EC%A7%80%ED%82%AC-%EC%9C%84%ED%82%A4-%EA%B0%9C%EC%84%A4%ED%95%98%EA%B8%B0/)를 참조하면 좋습니다.
 
-FIRSTwiki is an open-content encyclopedia about the FIRST Robotics Competition,
-designed to provide a useful resource for all aspects of the FIRST community.
-Following the tenets of gracious professionalism, members contribute back to the
-community by recording useful information that other members can benefit from.
-
-FIRSTwiki is a different kind of wiki, hosted on github pages instead of on a
-traditional wiki platform. See http://firstwiki.github.io/docs/contributing
-for more information. It's unclear how well this form of wiki will work, but
-it's worth the experiment. :)
 
 About this repository
 ---------------------
@@ -23,8 +13,10 @@ More information
 
 See https://firstwiki.github.io/docs/
 
-Running locally
+로컬에서 돌릴 경우
 ===============
+
+깃허브 페이지랑은 좀 관련없는 것 같아요. 루비 안 깔아도 뭐 사용하는 데 딱히 지장은 없습니다.
 
 This site uses jekyll and the github pages tools to generate HTML files from
 various metadata. To run a copy of this site locally (assuming you have ruby
