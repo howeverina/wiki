@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 # don't add github-pages to the jekyll_plugins group!
 
 gem "jekyll"
+gem "rexml"
+gem "webrick"
 gem 'github-pages', '134'
 
 gem 'jekyll-paginate'
