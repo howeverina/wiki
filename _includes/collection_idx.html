@@ -1,0 +1,14 @@
+{%comment%}
+    Generically lists all articles in a collection
+    
+    {% include collection_idx.html collection=site.foo %}
+{%endcomment%}
+
+<ul>
+{% assign docs = include.collection | sort: 'title' %}
+{% for doc in docs %}
+    {% if doc.layout != 'redirect' %}
+        <li><a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a></li>
+    {% endif %}
+{% endfor %}
+</ul>

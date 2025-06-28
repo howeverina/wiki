@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include head.html %}
+
+{% if jekyll.environment == "production" %}
+  <script src="/common/js/default.js"></script>
+  
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-76766258-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  
+{% else %}
+  <script src="{{ site.baseurl }}/common/js/default.js"></script>
+{% endif %}
+
+  <body>
+
+    <div class="container content">
+      <header>
+        <div class="row">
+            <h1 class="col-md-9"><a href="{% if jekyll.environment == "production" %}/{% else %}{{ site.baseurl }}/{% endif %}" title="Home">FIRSTwiki</a>
+                <small>{{ site.tagline }}</small>
+            </h1>
+
+            <div class="col-md-3 h1">
+                <form role="search" method="get" action="/search/">
+                    <div class="input-group">
+                        <input id="searchString" name="q" type="text" class="form-control" placeholder="Search for...">
+                        <span class="input-group-btn">
+                            <button type="submit" aria-label="Submit" class="btn btn-default"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <!-- TODO: this needs vast improvement -->
+        <nav class="navbar">
+          <ul class="nav nav-tabs">
+              <li><a href="/news/">News</a></li>
+              <li class="dropdown">
+                  <a data-target="#" href="/frcteams/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">FRC Teams<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                      {% for num in site.data.teamdata.teamidx.frc %}
+                          <li><a href="/frc{{ num }}/">{{ num }}'s</a></li>
+                      {% endfor %}
+                  </ul>
+              </li>
+              <li><a href="/wiki/">wiki</a></li>
+              <li><a href="/docs/">Docs</a></li>
+              
+          {% for n in site.data.menu.items %}
+            <li><a href="{{ n[1] }}">{{ n[0] }}</a></li>
+          {% endfor %}
+          {% capture page_path %}{% if site.github.is_project_page %}gh-pages{% else %}master{% endif %}{{ page.dir }}/{{ page.path }}{% endcapture %}
+          
+              <li class="navbar-right">
+                  <a href="{{ site.github.repository_url }}/commits/{{ page_path }}"><span class="octicon octicon-mark-github"></span> History</a>
+              </li>
+              <li class="navbar-right">
+                  <a href="{{ site.github.repository_url }}/edit/{{ page_path }}"><span class="octicon octicon-mark-github"></span> Edit on GitHub</a>
+              </li>
+              <li class="navbar-right">
+                  <a class="raw_source" href="https://raw.githubusercontent.com/{{ site.github.owner_name }}/{{ site.github.repository_name }}/{{ page_path }}">View Source</a>
+              </li>
+          </ul>
+        </nav>        
+      </header>
+
+      <main>
+        {{ content }}
+      </main>
+      
+      <div class="clearfix"></div>
+      
+      <hr></hr>
+      
+      <footer class="footer">
+        <small>
+          <a href="/docs/about">About</a> |
+          <a href="/docs/contributing">Contributing</a> |
+          <a href="https://gitter.im/firstwiki/wiki">Chat</a> |
+          <a href="/docs/terms">Terms of use</a> | 
+          Content is available under <a href="http://www.gnu.org/licenses/fdl-1.3.en.html">GNU Free Documentation License 1.3</a><br/>
+          &copy; <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%Y' }}</time> FIRSTwiki.
+        </small>
+      </footer>
+    </div>
+
+  </body>
+    
+</html>

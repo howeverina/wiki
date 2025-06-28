@@ -1,0 +1,18 @@
+{%comment%}
+    FIRSTwiki is not meant to replace something like Wikipedia, but rather it is
+    meant to supplement it with FIRST-specific information. When you want to provide
+    a pointer to a wikipedia page as the primary source of information, use this
+    include. For normal references, use the same mechanism as any other external
+    links.
+    
+    {% include wikilink topic="Topic" %}
+    
+    TODO: support multiple languages
+{%endcomment%}
+
+<div class="alert alert-info" role="alert">
+    Read more about 
+    <a class="alert-link" href="http://en.wikipedia.org/wiki/{{ include.topic | replace: ' ','_' }}">{{ include.topic }}</a>
+    on wikipedia.
+</div>
+

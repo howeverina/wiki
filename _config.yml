@@ -24,10 +24,10 @@ safe:             false
 excerpt_separator: ""
 strict_front_matter: true
 
-source: .
-data_dir:         _common/_data
-includes_dir:     _common/_includes
-layouts_dir:      _common/_layouts
+# source: .
+#data_dir:         _common/_data
+#includes_dir:     _common/_includes
+#layouts_dir:      _common/_layouts
 
 #
 # Begin specific configuration for this repo
