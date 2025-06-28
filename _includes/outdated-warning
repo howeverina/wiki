@@ -7,5 +7,5 @@
 {%endcomment%}
 
 <div class="alert alert-danger">
-    The following information is most likely <strong>outdated</strong>. You can help FIRSTwiki by <a class="alert-link" href="/docs/contributing">updating the information</a>.
+    본 문서에 서술된 것은 <strong>오래된</strong> 정보입니다. 새로운 정보를 알고 계신 경우 편집 요청을 통해 <a class="alert-link" href="/docs/contributing">기여</a>하실 수 있습니다.
 </div>
