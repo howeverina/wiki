@@ -40,16 +40,16 @@ collections:
   main: 
     output: true
     permalink: /:slug
-  대중음악:
+  music:
     output: true
     permalink: /:slug
-  국악이론:
+  gugak:
     output: true
     permalink: /:slug
-  조선전기:
+  earlyjs:
     output: true
     permalink: /:slug
-  인문사회:
+  humanities:
     output: true
     permalink: /:slug
 
@@ -67,24 +67,24 @@ defaults:
   - 
     scope:
       path: ""
-      type: "대중음악"
+      type: "music"
     values:
       layout: page
   - 
     scope:
       path: ""
-      type: "국악이론"
+      type: "gugak"
     values:
       layout: page
   - 
     scope:
       path: ""
-      type: "조선전기"
+      type: "earlyjs"
     values:
       layout: page
   - 
     scope:
       path: ""
-      type: "인문사회"
+      type: "humanities"
     values:
       layout: page
