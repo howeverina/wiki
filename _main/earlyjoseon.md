@@ -1,9 +1,9 @@
 ---
-title: 조선 전기 역사
+title: earlyjoseon
 ---
 {% include stub %}
 
 All Pages
 ---------
-{% assign collection = site['earlyjs'] %}
+{% assign collection = site['earlyjoseon'] %}
 {% include collection_idx.html collection=collection %}

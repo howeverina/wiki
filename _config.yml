@@ -46,7 +46,7 @@ collections:
   gugak:
     output: true
     permalink: /:slug
-  earlyjs:
+  earlyjoseon:
     output: true
     permalink: /:slug
   humanities:
@@ -79,7 +79,7 @@ defaults:
   - 
     scope:
       path: ""
-      type: "earlyjs"
+      type: "earlyjoseon"
     values:
       layout: page
   - 
